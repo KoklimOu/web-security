@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript redirection</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        
+
+        function redirect() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectTo = urlParams.get('url');
+            const allowDomains = ['google.com', 'bing.com'];
+
+            const message = document.getElementById('message');
+            const redirecting = document.getElementById('redirecting');
+
+            if (redirectTo) {
+                const url = new URL(redirectTo);
+                if (allowDomains.includes(url.hostname)) {
+                    redirecting.innerText = 'redirecting...'
+                    window.location.href = redirectTo;
+                } else {
+                    message.innerText = "Url not allow!"
+                }
+            } else {
+                message.innerText = "No URL provided to redirect.";
+                redirecting.innerText = "";
+            }
+        }
+
+        function redirectInsec() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectTo = urlParams.get('url');
+
+            if (redirectTo) {
+                window.location.href = redirectTo
+            } else {
+                message.innerText = "No URL provided to redirect.";
+                document.getElementById('redirecting').innerHTML = "";
+            }
+        }
+    </script>
+
+</head>
+<body onload="redirect()"  >
+    <h1 id="redirecting"></h1>
+    <p id="message"></p>
+
+    <p>try puting <b><i>?url=https://youtube.com</i></b> to your url</p>
+    <ul>Allowed url
+        <li>google.com</li>
+        <li>bing.com</li>
+    </ul>
+</body>
+</html>
