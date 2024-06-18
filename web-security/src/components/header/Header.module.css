@@ -1,0 +1,39 @@
+
+.headerContent {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 16px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.brand p {
+    font-weight: bold;
+    margin: 0;
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "username": "John Doe",
+        "password": "password123",
+        "phone": "123-456-7890",
+        "img": "https://example.com/images/john_doe.jpg"
+    },
+    {
+        "id": 2,
+        "username": "Jane Smith",
+        "password": "password456",
+        "phone": "234-567-8901",
+        "img": "https://example.com/images/jane_smith.jpg"
+    },
+    {
+        "id": 3,
+        "username": "Alice Johnson",
+        "password": "password789",
+        "phone": "345-678-9012",
+        "img": "https://example.com/images/alice_johnson.jpg"
+    },
+    {
+        "id": 4,
+        "username": "Michael Brown",
+        "password": "password101",
+        "phone": "456-789-0123",
+        "img": "https://example.com/images/michael_brown.jpg"
+    },
+    {
+        "id": 5,
+        "username": "Emily Wilson",
+        "password": "password112",
+        "phone": "567-890-1234",
+        "img": "https://example.com/images/emily_wilson.jpg"
+    },
+    {
+        "id": 6,
+        "username": "David Anderson",
+        "password": "password131",
+        "phone": "678-901-2345",
+        "img": "https://example.com/images/david_anderson.jpg"
+    },
+    {
+        "id": 7,
+        "username": "Sophia Jackson",
+        "password": "password415",
+        "phone": "789-012-3456",
+        "img": "https://example.com/images/sophia_jackson.jpg"
+    },
+    {
+        "id": 8,
+        "username": "James Taylor",
+        "password": "password161",
+        "phone": "890-123-4567",
+        "img": "https://example.com/images/james_taylor.jpg"
+    },
+    {
+        "id": 9,
+        "username": "Olivia Clark",
+        "password": "password718",
+        "phone": "901-234-5678",
+        "img": "https://example.com/images/olivia_clark.jpg"
+    },
+    {
+        "id": 10,
+        "username": "William Martinez",
+        "password": "password192",
+        "phone": "012-345-6789",
+        "img": "https://example.com/images/william_martinez.jpg"
+    }
+]
